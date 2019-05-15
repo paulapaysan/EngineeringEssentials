@@ -25,7 +25,19 @@ import java.io.IOException;
 // TODO - add your @Path here
 public class CompanyResource {
 
-    // TODO - Add a @GET resource to get company data
-    // Your service should return data for a given stock ticker
+    // resource to get company data
+    // return data for a given stock ticker
+    @GET 
+    @Produces({MediaType.APPLICATION_JSON})
+    public Company getAllStockPrices(String stockTicker, String start, String end) throws Exception {
+        List<Company> companies = FileHelper.readCompaniesFromFile("companyInfo.json");
+        for (Company co : companies) {
+            // if company found in given file
+            if (stockTicker.equals(co.symbol))
+                return co;
+        }
+        // stock ticker not found
+        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Error: Stock Ticker not found.").build();
+    }
 
 }
