@@ -30,22 +30,16 @@ class LineChart extends React.Component {
           },
           yAxis: {
             title: {
-              text: 'Number of Posts'
+              text: 'Price'
             }
           },
           series: [{
-            name: 'John Smith',
+            name: props.name,
             marker: {
               symbol: 'square'
             },
             data: props.dataOne
     
-          }, {
-            name: 'Jane Doe',
-            marker: {
-              symbol: 'diamond'
-            },
-            data: props.dataTwo
           }]
         }
     }

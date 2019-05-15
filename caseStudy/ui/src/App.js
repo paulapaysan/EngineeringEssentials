@@ -51,13 +51,13 @@ class App extends React.Component{
                 <div className="date-range">
                 <Form onSubmit={this.handleSubmit}/>
                 </div>
-
+                <div>
                 {
                 this.submit ? 
                 (<span>  {this.state.linechart} </span>) : 
                 (<span></span>)
                 }
-                
+                </div>
 
               </div>
               
