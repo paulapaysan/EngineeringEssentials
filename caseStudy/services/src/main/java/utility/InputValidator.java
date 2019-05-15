@@ -23,8 +23,34 @@ public class InputValidator {
 
     // TODO - write a method that will validate your JSON input files
 
-    // TODO - write a method that will validate the inputs to the Company Resource
+    // write a method that will validate the inputs to the Company Resource
+    @GET
+    @Path("companies")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllCompanies() throws IOException {
+        List<Company> companies = new ArrayList<Company>();
+        try {
+            companies = FileHelper.readCompaniesFromFile("companyInfo.json");
+            return Response.ok().build();
+        } catch (Exception e) {
+            System.out.println("Failed to read information from file");
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e).build();
+        }
+    }
 
-    // TODO - write a method that will validate the inputs to the Stock Resource
+    // write a method that will validate the inputs to the Stock Resource
+    @GET
+    @Path("stocks")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllStocks() throws IOException {
+        List<Stock> stocks = new ArrayList<Stock>();
+        try {
+            stocks = FileHelper.readAllStocks("historicalStockData.json");
+            return Response.ok().build();
+        } catch (Exception e) {
+            System.out.println("Failed to read information from file");
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e).build();
+        }
+    }
 
 }
