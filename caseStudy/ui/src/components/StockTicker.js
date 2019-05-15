@@ -47,7 +47,7 @@
  */
 
 import React from 'react';
-//import {Typeahead} from 'react-bootstrap-typeahead'; UNCOMMENT this line if you are using the react-bootstrap-typeeahead component
+import {Typeahead} from 'react-bootstrap-typeahead'; //UNCOMMENT this line if you are using the react-bootstrap-typeeahead component
 
 /* If you chose to use react-boostrap-typeahead, look at AsyncTypeahead for a component that 
  * provides auto-complete suggestions as you type. This would require adding a search handler 
@@ -56,7 +56,16 @@ import React from 'react';
  */
 
 class StockTicker extends React.Component {
-
+    const prefetched = [
+                           	{
+                           		"symbol":"ATVI",
+                           		"name":"Activision Blizzard Inc",
+                           		"headquartersCity":"Santa Monica",
+                           		"headquartersStateOrCountry":"CA",
+                           		"numberOfEmployees":9600,
+                           		"sector":"Technology",
+                           		"industry":"Internet Gaming"
+                           	}];
     /**
      * TODO
      * Prefetch the data required to display options fo the typeahead component. Initialize a state array with
@@ -89,9 +98,11 @@ class StockTicker extends React.Component {
              */
         };
         this.handleChange = this.handleChange.bind(this);
+         this.options = ["ATVI"]
     }
 
     handleChange(event) {
+         console.log(event)
         if (event.length > 0) {
             /**
              * TODO
@@ -132,20 +143,33 @@ class StockTicker extends React.Component {
                 <div className="ticker-input">
                     <p><strong>Stock Ticker</strong></p>
                     <div className="stockticker-typeahead">
-                        {/* useful props if you decide to use react-bootstrap-typeahead
                         <Typeahead
-                             align=
+                             align= 'left'
                              filterBy=
-                             labelKey=
+                             labelKey= ''
                              onChange={this.handleChange}
-                             minLength=
+                             minLength= 2
                              placeholder="Company Name/Ticker"
-                             options=
+                             options={this.options}
                         />
-                        */}
                     </div>
                 </div>
                 {
+                if (showcompanyinfo){
+                                    <div>
+                                        <h3>Company Info</h3>
+                                        <p> {this.state.company.name}</p>
+                                        <p> {this.state.company.symbol}</p>
+                                        <p> {this.state.company.city}</p>
+                                        <p> {this.state.company.state}</p>
+                                        <p> {this.state.company.sector}</p>
+                                        <p> {this.state.company.industry}</p>
+                                    </div> }
+                                else{
+                                <div>
+                                <p>No Company Selected</p>
+                                </div>
+                                }
                     /**
                      *  TODO
                      *  Create a div element that shows a company information when the ticker changes. You will need to use a conditional here
@@ -161,3 +185,4 @@ class StockTicker extends React.Component {
 }
 
 //Don't forget to export your component!
+export default StockTicker
