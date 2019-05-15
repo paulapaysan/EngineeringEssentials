@@ -16,6 +16,34 @@
 
 package pojo;
 
+
+
+public class ClosePrice {
+    String date;
+    double price;
+
+    public void ClosePrice(String date, double price) {
+        this.date = date;
+        this.price = price;
+    }
+
+    public void setDate(String d) {
+        this.date = d;
+    }
+    
+    public void setPrice(double p) {
+        this.price = p;
+    }
+
+    public String getDate() {
+        return this.date;
+    }
+
+    public double getPrice() {
+        return this.price;
+    }
+}
+
 /**
  * This class will define a company's end-of-day stock price
  * Look at resources/data/historicalStockData.json
@@ -23,9 +51,35 @@ package pojo;
 public class Stock {
 
 
+    String name;
+    ArrayList<ClosePrice> daily = new ArrayList<ClosePrice>();
+
+    public void Stock(String name, ArrayList daily) {
+        this.name = name;
+        this.daily = daily;
+    }
+
+    public void setName(String n) {
+        this.name = n;
+    }
+    
+    public void setDaily(ArrayList daily) {
+        this.daily = daily;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public double getDaily() {
+        return this.daily;
+    }
+
+
     // TODO - Think back to your modelling session
     // Define the attributes of a stock price based on the
     // provided data in resources/data
 
-    // TODO - add getter and setter methods for your attributes
+
 }
+
