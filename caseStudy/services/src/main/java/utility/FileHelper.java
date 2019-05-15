@@ -2,8 +2,9 @@ package utility;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.ClosePrice;
-import model.Company;
+import pojo.ClosePrice;
+import pojo.Company;
+import pojo.Stock;
 
 import java.io.File;
 import java.io.FileInputStream;

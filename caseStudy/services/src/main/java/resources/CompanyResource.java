@@ -15,12 +15,16 @@
  */
 
 package resources;
+import pojo.Company;
+import utility.FileHelper;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
+import java.util.List;
 
 // TODO - add your @Path here
 public class CompanyResource {
@@ -33,11 +37,12 @@ public class CompanyResource {
         List<Company> companies = FileHelper.readCompaniesFromFile("companyInfo.json");
         for (Company co : companies) {
             // if company found in given file
-            if (stockTicker.equals(co.symbol))
+            if (stockTicker.equals(co.getSymbol()))
                 return co;
         }
+        return null;
         // stock ticker not found
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Error: Stock Ticker not found.").build();
+        //return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity("Error: Stock Ticker not found.").build();
     }
 
 }

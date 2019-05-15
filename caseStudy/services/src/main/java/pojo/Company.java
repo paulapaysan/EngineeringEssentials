@@ -22,13 +22,13 @@ package pojo;
  */
 public class Company {
 
-    String symbol;
-    String name;
-    String headquartersCity;
-    String headquartersStateOrCountry;
-    int numberOfEmployees;
-    String sector;
-    String industry;
+    public String symbol;
+    public String name;
+    public String headquartersCity;
+    public String headquartersStateOrCountry;
+    public int numberOfEmployees;
+    public String sector;
+    public String industry;
 
     public Company(String symbol, String name, String headquartersCity, String headquartersStateOrCountry, int numberOfEmployees, String sector, String industry) {
         this.symbol = symbol;
