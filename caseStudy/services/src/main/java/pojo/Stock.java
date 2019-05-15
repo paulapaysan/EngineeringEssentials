@@ -17,32 +17,8 @@
 package pojo;
 
 
+import java.util.ArrayList;
 
-public class ClosePrice {
-    String date;
-    double price;
-
-    public void ClosePrice(String date, double price) {
-        this.date = date;
-        this.price = price;
-    }
-
-    public void setDate(String d) {
-        this.date = d;
-    }
-    
-    public void setPrice(double p) {
-        this.price = p;
-    }
-
-    public String getDate() {
-        return this.date;
-    }
-
-    public double getPrice() {
-        return this.price;
-    }
-}
 
 /**
  * This class will define a company's end-of-day stock price
@@ -71,7 +47,7 @@ public class Stock {
         return this.name;
     }
 
-    public double getDaily() {
+    public ArrayList getDaily() {
         return this.daily;
     }
 
@@ -79,7 +55,6 @@ public class Stock {
     // TODO - Think back to your modelling session
     // Define the attributes of a stock price based on the
     // provided data in resources/data
-
 
 }
 
