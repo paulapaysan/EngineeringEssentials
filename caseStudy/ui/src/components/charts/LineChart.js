@@ -22,7 +22,7 @@ class LineChart extends React.Component {
         super(props);
         this.highchartsOptions = {
           title: {
-            text: 'Posts Per Month'
+            text: props.name
           },
           xAxis: {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -54,20 +54,6 @@ class LineChart extends React.Component {
    Highcharts.chart('chart', this.highchartsOptions);
     }
 
-    /*componentWillReceiveProps(props) {
-        console.log("New data received to redraw chart.");
-        Object.assign(this.chart,{
-        data: props.data,
-        xaxis: Date.UTC(props.Data),
-        companyName: props.data.name
-        }
-        );
-         Highcharts.chart('chart', this.state.chartData);
-        
-       
-         this.chart.series[0].setData(data);
-
-    }*/
 
     componentWillUnmount() {
         this.chart.destroy();
