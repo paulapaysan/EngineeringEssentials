@@ -22,6 +22,7 @@ package pojo;
  */
 public class Stock {
 
+
     // TODO - Think back to your modelling session
     // Define the attributes of a stock price based on the
     // provided data in resources/data
