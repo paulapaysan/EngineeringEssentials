@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e8a23642-7628-48f7-a51b-d1455f29842c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/caseStudy/services/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/services/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy/services/src/main/java/resources/StockResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy/services/src/main/java/resources/StockResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/engineering-essentials-services.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example2Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example2Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example3Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example3Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example4Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example4Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example5Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example5Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example6Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/examples/Example6Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/server/StarterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/server/StarterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/utility/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/main/java/utility/FileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/test/java/resources/ResourcesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/src/test/java/resources/ResourcesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/services/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/ui/starter_code/cards-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/ui/starter_code/cards-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/ui/starter_code/cards-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/ui/starter_code/cards-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/techCurriculum/ui/starter_code/cards-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/techCurriculum/ui/starter_code/cards-app/src/index.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/techCurriculum/services/EngineeringEssentialsServices/target/" />
+    <ignored path="$PROJECT_DIR$/caseStudy/services/target/" />
+    <ignored path="$PROJECT_DIR$/techCurriculum/services/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/resources/CompanyResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="463" />
+    <option name="y" value="23" />
+    <option name="width" value="1186" />
+    <option name="height" value="922" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="engineering-essentials and modules" type="9c53a853:ProjectViewModuleGroupNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EngineeringEssentials" type="b2602c69:ProjectViewProjectNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8a23642-7628-48f7-a51b-d1455f29842c" name="Default Changelist" comment="" />
+      <created>1557936955532</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557936955532</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="463" y="23" width="1186" height="922" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28933567" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="CheckStyle" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Statistic" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/caseStudy/services/src/main/java/resources/CompanyResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

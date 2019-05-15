@@ -2,8 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<<<<<<< HEAD
     <modelVersion>4.0.0</modelVersion>
     <groupId>engineering-essentials</groupId>
     <artifactId>stock-visualization-app</artifactId>
     <version>1.0-SNAPSHOT</version>
+=======
+<groupId>engineering-essentials</groupId>
+<artifactId>stock-visualization-app</artifactId>
+<version>1.0-SNAPSHOT</version>
+>>>>>>> 20f1079731b12cf5bc296e6cc9ff898efc3d6eef
 </project>
