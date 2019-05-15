@@ -50,6 +50,7 @@ public class ClosePrice {
  */
 public class Stock {
 
+
     String name;
     ArrayList<ClosePrice> daily = new ArrayList<ClosePrice>();
 
@@ -73,6 +74,12 @@ public class Stock {
     public double getDaily() {
         return this.daily;
     }
+
+
+    // TODO - Think back to your modelling session
+    // Define the attributes of a stock price based on the
+    // provided data in resources/data
+
 
 }
 
