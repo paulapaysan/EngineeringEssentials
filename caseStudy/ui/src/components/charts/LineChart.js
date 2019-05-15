@@ -20,67 +20,41 @@ import Highcharts from 'highcharts';
 class LineChart extends React.Component {
     constructor(props) {
         super(props);
-        this.chart = {
-                    chart: {
-                        zoomType: 'x'
-                    },
-                    title: {
-                        text: companyName
-                    },
-                    subtitle: {
-                        text: document.ontouchstart === undefined ?
-                                'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
-                    },
-                    xAxis: {
-                        type: xaxis
-                    },
-                    yAxis: {
-                        title: {
-                            text: 'Stock Value'
-                        }
-                    },
-                    legend: {
-                        enabled: false
-                    },
-                    plotOptions: {
-                        area: {
-                            fillColor: {
-                                linearGradient: {
-                                    x1: 0,
-                                    y1: 0,
-                                    x2: 0,
-                                    y2: 1
-                                },
-                                stops: [
-                                    [0, Highcharts.getOptions().colors[8]],
-                                    [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
-                                ]
-                            },
-                            marker: {
-                                radius: 2
-                            },
-                            lineWidth: 1,
-                            states: {
-                                hover: {
-                                    lineWidth: 1
-                                }
-                            },
-                            threshold: null
-                        }
-                    },
-                         series: [{
-                                    type: 'Date Range',
-                                    name: 'stock ticker: Prices',
-                                    data: this.props.data
-                                }]
-                            };
+        this.highchartsOptions = {
+          title: {
+            text: 'Posts Per Month'
+          },
+          xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+              'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+          },
+          yAxis: {
+            title: {
+              text: 'Number of Posts'
+            }
+          },
+          series: [{
+            name: 'John Smith',
+            marker: {
+              symbol: 'square'
+            },
+            data: props.dataOne
+    
+          }, {
+            name: 'Jane Doe',
+            marker: {
+              symbol: 'diamond'
+            },
+            data: props.dataTwo
+          }]
+        }
     }
 
     componentDidMount() {
-   Highcharts.chart('chart', this.chart);
+   Highcharts.chart('chart', this.highchartsOptions);
     }
 
-    componentWillReceiveProps(props) {
+    /*componentWillReceiveProps(props) {
         console.log("New data received to redraw chart.");
         Object.assign(this.chart,{
         data: props.data,
@@ -89,19 +63,11 @@ class LineChart extends React.Component {
         }
         );
          Highcharts.chart('chart', this.state.chartData);
-        /**
-         * TODO
-         * Parse the data received from props, a Javascript object, to map to a Javascript array
-         * required by the type of line chart chosen and set it in the series. Use Date.UTC(..)
-         * to create the x-axis.
-         */
         
-        **
-         * TODO
-         * Uncomment the line below to pass the data be displayed to the series
+       
          this.chart.series[0].setData(data);
-         *
-    }
+
+    }*/
 
     componentWillUnmount() {
         this.chart.destroy();

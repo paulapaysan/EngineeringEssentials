@@ -55,6 +55,7 @@ class Date extends React.Component {
          * own onChange prop.
          */
          this.setState({startDate:date});
+         this.props.onChange(date);
     }
 
      handleChangeEnd(date) {
@@ -65,6 +66,7 @@ class Date extends React.Component {
              * own onChange prop.
              */
              this.setState({endDate:date});
+             this.props.onChange(date);
         }
 
     render() {
@@ -79,12 +81,13 @@ class Date extends React.Component {
                      *
                      */
                 }
-                <p><strong>{this.props.text}</strong></p>
                 <div className="date-input">
-                    <DatePicker onChange={this.handleChangeStart} value={this.state.startDate}/>
+                <p><strong>{"Start Date"}</strong></p>
+                    <DatePicker onChange={this.handleChangeStart} selected={this.state.startDate}/>
                 </div>
                 <div className="date-input">
-                     <DatePicker onChange={this.handleChangeEnd} value={this.state.startEnd}/>
+                <p><strong>{"End Date"}</strong></p>
+                     <DatePicker onChange={this.handleChangeEnd} selected={this.state.endDate}/>
                 </div>
             </div>
         );

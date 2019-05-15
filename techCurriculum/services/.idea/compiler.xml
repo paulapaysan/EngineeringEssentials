@@ -9,9 +9,5 @@
         <module name="engineering-essentials-services" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="engineering-essentials-services" target="1.8" />
-      <module name="services" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

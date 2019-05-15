@@ -16,6 +16,9 @@
 
 import React from 'react';
 import './style/App.css';
+import Date from './components/Date';
+import Charts from './components/Charts';
+import StockTicker from './components/StockTicker'
 
 /**
  * TODO:
@@ -27,10 +30,6 @@ class App extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            /**
-             * TODO
-             * Add state objects for the user inputs and anything else you may need to render the highchart.
-             */
               startData : props.startData,
               endDate : props.endDate,
 
@@ -55,12 +54,13 @@ class App extends React.Component{
                * highchart should be displayed by changing the state of that boolean.
                * Don't forget to bind these methods!
                */
-               <StockTicker/>
+               //<StockTicker/>
                }
 
                 <div className="date-range">
-                <Date text = " Start Date"/>
-                <Date text = " End Date"/>
+                <Date/>
+
+                <StockTicker label = "Stock Ticker"/>
                 </div>
               </div>
 
