@@ -24,7 +24,7 @@ class Form extends React.Component{
         this.handleTickerChange= this.handleTickerChange.bind(this);
     }
     handleSubmit(event){
-        event.preventDefault();
+        //event.preventDefault();
         this.props.onSubmit(this.state.startDate, this.state.endDate, this.state.StockTicker);
     }
 

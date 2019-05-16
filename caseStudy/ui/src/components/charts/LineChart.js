@@ -17,16 +17,17 @@
 import React from 'react';
 import Highcharts from 'highcharts';
 
+
 class LineChart extends React.Component {
     constructor(props) {
         super(props);
-        this.highchartsOptions = {
+        this.state = {
+        highchartsOptions: {
           title: {
             text: props.name
           },
           xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-              'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            categories: props.xaxis
           },
           yAxis: {
             title: {
@@ -38,15 +39,60 @@ class LineChart extends React.Component {
             marker: {
               symbol: 'square'
             },
-            data: props.dataOne
+            data: props.data
     
           }]
         }
+      }
     }
 
     componentDidMount() {
-   Highcharts.chart('chart', this.highchartsOptions);
+        this.setState(
+        {highchartsOptions: {
+        series: [{
+          data: [Math.random() * 5, Math.random() * 5, Math.random() * 5]
+          }]
+      }});
+        Highcharts.chart('chart', this.state.highchartsOptions);
     }
+
+    componentWillReceiveProps(nextProps) {
+      console.log("New data received to redraw chart.");
+      
+      /**
+       * TODO
+       * Parse the data received from props, a Javascript object, to map to a Javascript array
+       * required by the type of line chart chosen and set it in the series. Use Date.UTC(..)
+       * to create the x-axis.
+       */
+      
+      /**
+       * TODO
+       * Uncomment the line below to pass the data be displayed to the series*/
+      this.setState(
+        {highchartsOptions: {
+        title: {
+          text: nextProps.name
+        },
+        xAxis: {
+          categories: nextProps.xaxis
+        },
+        yAxis: {
+          title: {
+            text: 'Price'
+          }
+        },
+        series: [{
+          name: nextProps.name,
+          marker: {
+            symbol: 'square'
+          },
+          data: nextProps.data
+          }]
+      }});
+        /*this.chart.setTitle({text: props.name});
+       this.chart.series[0].setData(props.data); */
+  }
 
 
     componentWillUnmount() {

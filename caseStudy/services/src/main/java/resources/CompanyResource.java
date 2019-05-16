@@ -18,27 +18,33 @@ package resources;
 import pojo.Company;
 import utility.FileHelper;
 
+import javax.swing.*;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.MultivaluedHashMap;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.util.List;
 
-// TODO - add your @Path here
-public class CompanyResource {
+@Path("company")
+public class CompanyResource{
 
     // resource to get company data
-    // return data for a given stock ticker
-    @GET 
-    @Produces({MediaType.APPLICATION_JSON})
-    public Company getAllStockPrices(String stockTicker, String start, String end) throws Exception {
+    // return data for a given stock ticke
+    @GET
+    @Path("info/{company}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public static Response getCompanyInfo(@PathParam("company") String stockTicker) throws Exception {
         List<Company> companies = FileHelper.readCompaniesFromFile("companyInfo.json");
         for (Company co : companies) {
             // if company found in given file
-            if (stockTicker.equals(co.getSymbol()))
-                return co;
+            if (stockTicker.equals(co.getSymbol())) {
+                return Response.ok().entity(co).build();
+            }
         }
         return null;
         // stock ticker not found
@@ -46,3 +52,4 @@ public class CompanyResource {
     }
 
 }
+

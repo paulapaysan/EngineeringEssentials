@@ -37,7 +37,7 @@ public class FileHelper {
 
     // reads the companies from the file and returns it in a list of company objects
     public static List<Company> readCompaniesFromFile(String fileName) throws IOException {
-        InputStream inputStream = new FileInputStream(("resources/data" + File.separatorChar + fileName));
+        InputStream inputStream = new FileInputStream(("/Users/emilyknott/Desktop/EngineeringEssentials/caseStudy/services/src/main/resources/data" + File.separatorChar + fileName));
 //        InputStream resourceAsStream = FileHelper.class.getClassLoader().getResourceAsStream(fileName);
         return mapper.readValue(inputStream, new TypeReference<List<Company>>() {});
     }

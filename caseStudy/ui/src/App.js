@@ -20,47 +20,51 @@ import Date from './components/Date';
 import LineChart from './components/charts/LineChart';
 import StockTicker from './components/StockTicker';
 import Form from './components/Form';
+import Charts from './components/Charts';
+
 
 /**
  * TODO:
  * Import your components
  */
 
-
 class App extends React.Component{
-    
 
     constructor(props) {
         super(props);
-        this.state ={
-          linechart: null
+        this.state = {
+          //linechart: null,
+          tick:'',
+          start: '',
+          end: ''
         }
+        this.submit = Boolean(false);
         this.handleSubmit= this.handleSubmit.bind(this);
     }
-    handleSubmit(start, end, ticker){
-      this.submit = Boolean(true);
-    this.setState({linechart : <LineChart name = {ticker}/>});
+
+    handleSubmit(star, en, ticker){
+    console.log(this.submit);
+    /*if ( this.state.linechart!= null){
+      this.state.linechart.updateTitle(ticker);
+    }*/
+    this.submit = Boolean(true);
+    this.setState({tick: ticker, start: star, end: en});
+    console.log(this.submit);
+    
     }
 
     render () {
       return (
-                
           <div className="page-display">
               <div className="input">
-                
-                <div className="date-range">
                 <Form onSubmit={this.handleSubmit}/>
-                </div>
-                <div>
+              </div>
                 {
                 this.submit ? 
-                (<span>  {this.state.linechart} </span>) : 
+                (<span>  {<Charts name = {this.state.tick} start = {this.state.start} end = {this.state.end}  />} {this.submit = Boolean(false)}
+                </span> ) : 
                 (<span></span>)
                 }
-                </div>
-
-              </div>
-              
 
           </div>
       );
